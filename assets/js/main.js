@@ -26,6 +26,7 @@ const navLink =document.querySelectorAll('.nav_link')
 function linkAction(){
     const navMenu = document.getElementById('nav-menu')
     navMenu.classList.remove('show-menu')
+    //点击每个菜单后收起菜单栏
 }
 navLink.forEach(n => n.addEventListener('click',linkAction))
 /*==================== ACCORDION SKILLS ====================*/
@@ -49,16 +50,17 @@ skillsHeader.forEach((el) => {
 const tabs = document.querySelectorAll('[data-target]'),
     tabContents = document.querySelectorAll('[data-content]')
 
-tabs.forEach(tab =>{
-    tab.addEventListener('click', () =>{
+tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+        console.log('click disparado')
         const target = document.querySelector(tab.dataset.target)
 
-        tabContents.forEach(tabContent =>{
+        tabContents.forEach(tabContent => {
             tabContent.classList.remove('qualification_active')
         })
         target.classList.add('qualification_active')
 
-        tabs.forEach(tab =>{
+        tabs.forEach(tab => {
             tab.classList.remove('qualification_active')
         })
         tab.classList.add('qualification_active')
@@ -132,9 +134,9 @@ function scrollActive(){
         sectionId = current.getAttribute('id')
 
         if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
+            document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.add('active-link')
         }else{
-            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
+            document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.remove('active-link')
         }
     })
 }
@@ -159,6 +161,7 @@ window.addEventListener('scroll', scrollUp)
 const themeButton = document.getElementById('theme-button')
 const darkTheme = 'dark-theme'
 const iconTheme = 'uil-sun'
+const language = 'cn'
 
 // Previously selected topic (if user selected)
 const selectedTheme = localStorage.getItem('selected-theme')

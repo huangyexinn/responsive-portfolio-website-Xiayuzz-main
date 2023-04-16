@@ -17,13 +17,15 @@
         
         <!--==================== CSS ====================-->
         <!-- 引用外部样式表 -->
-        <link rel="stylesheet" href="assets/css/styles.css">
 
-        <title>Xiayuzz Personal Website</title>
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <!-- 网页标题 -->
+        <title>Xiayuzz Personal Website</title> 
+
     </head>
     <body>
         <!--==================== HEADER ====================-->
-        <header class="header scroll-header" id="header">
+        <header class="header " id="header">
             <nav class="nav container">
                 <a href="#" class="nav_logo">Xiayuzz</a>
 
@@ -31,32 +33,38 @@
                     <ul class="nav_list grid">
                         <li class="nav_item">
                             <a href="#home" class="nav_link active-link">
-                                <i class="uil uil-estate nav_icon"></i> Home
+                                <i class="uil uil-estate nav_icon"></i>
+                                <p i18n="home">Home</p>
                             </a>
                         </li>
                         <li class="nav_item">
                             <a href="#about" class="nav_link">
-                                <i class="uil uil-user nav_icon"></i> About
+                                <i class="uil uil-user nav_icon"></i>
+                                <p i18n="about">About</p> 
                             </a>
                         </li>
                         <li class="nav_item">
                             <a href="#skills" class="nav_link">
-                                <i class="uil uil-file-alt nav_icon"></i> Skills
+                                <i class="uil uil-file-alt nav_icon"></i>
+                                <p i18n="skills">Skills</p>
                             </a>
                         </li>
                         <li class="nav_item">
                             <a href="#services" class="nav_link">
-                                <i class="uil uil-briefcase-alt nav_icon"></i> Services
+                                <i class="uil uil-briefcase-alt nav_icon"></i>
+                                <p i18n="services">Services</p> 
                             </a>
                         </li>
                         <li class="nav_item">
                             <a href="#portfolio" class="nav_link">
-                                <i class="uil uil-scenery nav_icon"></i> Portfolio
+                                <i class="uil uil-scenery nav_icon"></i>
+                                <p i18n="portfolio">Portfolio</p>
                             </a>
                         </li>
                         <li class="nav_item">
                             <a href="#contact" class="nav_link">
-                                <i class="uil uil-message nav_icon"></i> Contactme
+                                <i class="uil uil-message nav_icon"></i>
+                                <p i18n="contact">Contactme</p>
                             </a>
                         </li>
                     </ul>
@@ -64,8 +72,10 @@
                 </div>
 
                 <div class="nav_btns">
-                    <!-- Theme change button -->
+                    <!-- 主题变换按钮 -->
                     <i class="uil uil-moon change-theme" id="theme-button"></i>
+                    <!-- 中英转换按钮 -->
+                    <i class="uil uil-english-to-chinese change-language" id="translate-button"></i>
 
                     <div class="nav_toggle" id="nav-toggle">
                         <i class="uil uil-apps"></i>
@@ -111,12 +121,13 @@
                             </svg>
                         </div>
                         <div class="home_data">
-                            <h1 class="home_title">Hi,I'm Xiayuzz</h1>
-                            <h3 class="home_subtitle">Anime editor</h3>
-                            <p class="home_description">High level experience in web desgin
-                                and development konwledge,producing quality work.</p>
+                            <h1 class="home_title" i18n="home__title">Hi,I'm Xiayuzz</h1>
+                            <h3 class="home_subtitle" i18n="home__subtitle">Anime editor</h3>
+                            <p class="home_description" i18n="home__description">High level experience in web design and
+                                development knowledge producing quality work. </p>
                             <a href="#contact" class="button button--flex">
-                                Contact Me <i class="uil uil-message button_icon"></i>
+                                <span i18n="home__contact">Contact Me</span>
+                            <i class="uil uil-message button_icon"></i>
                             </a>
                         </div>
                     </div>
@@ -124,7 +135,7 @@
                 <div class="home_scroll"> 
                     <a href="#about" class="home_scroll-button button--flex">
                         <i class="uil uil-mouse-alt home_scroll-mouse"></i>
-                        <span class="home_scroll-name">Scoll down</span>
+                        <span class="home_scroll-name" i18n="home__scroll-name">Scoll down</span>
                         <i class="uil uil-arrow-down home_scroll-arrow"></i>
                     </a>    
                 </div>
@@ -133,34 +144,34 @@
 
             <!--==================== ABOUT ====================-->
             <section class="about section" id="about">
-                <h2 class="section_title">About Me</h2>
-                <span class="section_subtitle">My introdution</span>
+                <h2 class="section_title" i18n="about__title">About Me</h2>
+                <span class="section_subtitle" i18n="about__subtitle">My introdution</span>
 
                 <div class="about_container container grid">
                     <img src="assets/img/aboutme.png" alt="" class="about_img">
 
                     <div class="about_data">
-                        <p class="about_description">Web developer,with extensive knowledge and 
+                        <p class="about_description" i18n="about__description">Web developer,with extensive konwledge and 
                             years of experience,working in web technologies an Ui/Ux design,delivering quality work
                         </p>
                         <div class="about_info">
                             <div>
                                 <span class="about_info-title">08+</span>
-                                <span class="about_info-name">Years <br> experience</span>
+                                <span class="about_info-name" i18n="about__info-name1">Years <br> experience</span>
                             </div>
                             
                             <div>
                                 <span class="about_info-title">20+</span>
-                                <span class="about_info-name">Completed <br> project</span>
+                                <span class="about_info-name" i18n="about__info-name2">Completed <br> project</span>
                             </div>
                             
                             <div>
                                 <span class="about_info-title">05+</span>
-                                <span class="about_info-name">Companies <br> worked</span>
+                                <span class="about_info-name" i18n="about__info-name3">Companies <br> worked</span>
                             </div>
                         </div>
                     <div class="about_buttons">
-                        <a  download='' href="assets/pdf/Alexa-Cv.pdf" class="button button--flex">
+                        <a  download='' href="assets/pdf/Alexa-Cv.pdf" class="button button--flex" i18n="download">
                             Download CV<i class="uil uil-download-alt button_icon"></i>
                         </a>
                     </div>
@@ -170,8 +181,8 @@
 
             <!--==================== SKILLS ====================-->
             <section class="skills section" id="skills">
-                <h2 class="section_title">Skills</h2>
-                <span class="section_subtitle">My technical level</span>
+                <h2 class="section_title" i18n="skills__title">Skills</h2>
+                <span class="section_subtitle" i18n="skills__subtitle">My technical level</span>
                 
                 <div class="skills_container container grid">
                     <div>
@@ -181,8 +192,8 @@
                                 <i class="uil uil-brackets-curly skills_icon"></i>
 
                                 <div>
-                                    <h1 class="skills_title">Frontend developer</h1>
-                                    <span class="skills_subtitle">More than 4 years</span>
+                                    <h1 class="skills_title" i18n="home__subtitle">Frontend developer</h1>
+                                    <span class="skills_subtitle" i18n="skills__years">More than 4 years</span>
                                 </div>
                                 <i class="uil uil-angle-down skills_arrow"></i>
                             </div>
@@ -236,8 +247,8 @@
                                 <i class="uil uil-server-network skills_icon"></i>
 
                                 <div>
-                                    <h1 class="skills_title">Backend developer</h1>
-                                    <span class="skills_subtitle">More than 3 years</span>
+                                    <h1 class="skills_title" i18n="skills__title2">Backend developer</h1>
+                                    <span class="skills_subtitle" i18n="skills__years2">More than 3 years</span>
                                 </div>
                                 <i class="uil uil-angle-down skills_arrow"></i>
                             </div>
@@ -290,8 +301,8 @@
                                 <i class="uil uil-swatchbook skills_icon"></i>
 
                                 <div>
-                                    <h1 class="skills_title">Designer</h1>
-                                    <span class="skills_subtitle">More than 4 years</span>
+                                    <h1 class="skills_title" i18n="skills__title3">Designer</h1>
+                                    <span class="skills_subtitle" i18n="skills__years3">More than 4 years</span>
                                 </div>
                                 <i class="uil uil-angle-down skills_arrow"></i>
                             </div>
@@ -345,19 +356,19 @@
 
             <!--==================== QUALIFICATION ====================-->
             <section class="qualification section">
-                <h2 class="section_title">Qualification</h2>
-                <span class="section_subtitle">My personal journey</span>
+                <h2 class="section_title" i18n="qualification__title">Qualification</h2>
+                <span class="section_subtitle" i18n="qualification__subtitle">My personal journey</span>
 
                 <div class="qualification_container container">
                     <div class="qualification_tabs">
                         <div class="qualification_button button--flex qualification_active" data-target="#education">
                             <i class="uil uil-graduation-cap qualification_icon"></i>
-                            Education
+                            <span i18n="education">Education</span>
                         </div>
 
                         <div class="qualification_button button--flex" data-target="#work">
                             <i class="uil uil-briefcase-alt qualification_icon"></i>
-                            Work
+                            <span i18n="work">Work</span>
                         </div>
                     </div>
 
@@ -367,8 +378,8 @@
                             <!--==================== QUALIFICATION_1 ====================-->
                             <div class="qualification_data">
                                 <div>
-                                    <h3 class="qualification_title">Computer Enginner</h3>
-                                    <span class="qualification_subtitle">Peru - University</span>
+                                    <h3 class="qualification_title" i18n="qualification1__title">Computer Enginner</h3>
+                                    <span class="qualification_subtitle" i18n="qualification1__subtitle">Peru - University</span>
                                     <div class="qualification_calendar">
                                         <i class="uil uil-calendar-alt"></i>
                                         2009-2014
@@ -391,8 +402,8 @@
                                 </div>
 
                                 <div>
-                                    <h3 class="qualification_title">Web Design</h3>
-                                    <span class="qualification_subtitle">Spain -Institute</span>
+                                    <h3 class="qualification_title" i18n="qualification2__title">Web Design</h3>
+                                    <span class="qualification_subtitle" i18n="qualification2__subtitle">Self-Study</span>
                                     <div class="qualification_calendar">
                                         <i class="uil uil-calendar-alt"></i>
                                         2014 - 2017 
@@ -403,8 +414,8 @@
                             <!--==================== QUALIFICATION_3 ====================-->
                             <div class="qualification_data">
                                 <div>
-                                    <h3 class="qualification_title">Web Development</h3>
-                                    <span class="qualification_subtitle">Peru - Institute</span>
+                                    <h3 class="qualification_title" i18n="qualification3__title">Web Development</h3>
+                                    <span class="qualification_subtitle" i18n="qualification3__subtitle">Self-Study</span>
                                     <div class="qualification_calendar">
                                         <i class="uil uil-calendar-alt"></i>
                                         2017 - 2019
@@ -426,8 +437,8 @@
                                 </div>
 
                                 <div>
-                                    <h3 class="qualification_title">Master in Ui/Ux</h3>
-                                    <span class="qualification_subtitle">Peru - Institute</span>
+                                    <h3 class="qualification_title" i18n="qualification4__title">Master in Ui/Ux</h3>
+                                    <span class="qualification_subtitle" i18n="qualification3__subtitle">Peru - Institute</span>
                                     <div class="qualification_calendar">
                                         <i class="uil uil-calendar-alt"></i>
                                         2019 - 2021
@@ -441,8 +452,8 @@
                             <!--==================== QUALIFICATION_1 ====================-->
                             <div class="qualification_data">
                                 <div>
-                                    <h3 class="qualification_title">Software Enginner</h3>
-                                    <span class="qualification_subtitle">Microsoft - Peru</span>
+                                    <h3 class="qualification_title" i18n="qualification5__title">Software Engineer</h3>
+                                    <span class="qualification_subtitle" i18n="qualification5__subtitle">Microsoft - Google</span>
                                     <div class="qualification_calendar">
                                         <i class="uil uil-calendar-alt"></i>
                                         2016-2018
@@ -465,8 +476,8 @@
                                 </div>
 
                                 <div>
-                                    <h3 class="qualification_title">Frontend Developer</h3>
-                                    <span class="qualification_subtitle">Apple Inc - Spain</span>
+                                    <h3 class="qualification_title" i18n="qualification6__title">Frontend Developer</h3>
+                                    <span class="qualification_subtitle" i18n="qualification6__subtitle">Apple Inc - Samsung</span>
                                     <div class="qualification_calendar">
                                         <i class="uil uil-calendar-alt"></i>
                                         2018 - 2020 
@@ -477,8 +488,8 @@
                             <!--==================== QUALIFICATION_3 ====================-->
                             <div class="qualification_data">
                                 <div>
-                                    <h3 class="qualification_title">Ui Designer</h3>
-                                    <span class="qualification_subtitle">Figma - Spain</span>
+                                    <h3 class="qualification_title" i18n="qualification7__title">                                                                      b                                                                                                                                                                </h3>
+                                    <span class="qualification_subtitle" >Figma - Adobe </span>
                                     <div class="qualification_calendar">
                                         <i class="uil uil-calendar-alt"></i>
                                         2009 - 2014
@@ -497,41 +508,41 @@
 
             <!--==================== SERVICES ====================-->
             <section class="services section" id="services">
-                <h2 class="section_title">Services</h2>
-                <span class="section_subtitle">What I offer</span>
+                <h2 class="section_title" i18n="services__title">Services</h2>
+                <span class="section_subtitle" i18n="services_subtitle">What I offer</span>
 
                 <div class="services_container container grid">
                     <!--==================== SERVICES 1 ====================-->
                     <div class="services_content">
                         <div>
                             <i class="uil uil-web-grid services_icon"></i>
-                            <h3 class="services_title">Ui/Ux <br> Designer</h3>
+                            <h3 class="services_title" i18n="services1__title">Ui/Ux <br> Designer</h3>
                         </div>
                         <span class="button button--flex button--small button--link services_button">
-                            View More
+                            <span i18n="services1__button">View More</span>
                             <i class="uil uil-arrow-right button_icon"></i>
                         </span>
                         <div class="services_modal">
                             <div class="services_modal-content">
-                                <h4 class="services_modal-title">Ui/Ux <br> Designer</h4>
+                                <h4 class="services_modal-title" i18n="services1__title">Ui/Ux <br> Designer</h4>
                                 <i class="uil uil-times services_modal-close"></i>
     
                                 <ul class="services_modal-services grid">
                                     <li class="services_modal-service">
                                         <i class="uil uil-check-circle services_modal-icon"></i>
-                                        <p>I develop the user interface.</p>
+                                        <p i18n="services__modal-service1">I develop the user interface.</p>
                                     </li>
                                     <li class="services_modal-service">
                                         <i class="uil uil-check-circle services_modal-icon"></i>
-                                        <p>Web page development.</p>
+                                        <p i18n="services__modal-service2">Web page development.</p>
                                     </li>
                                     <li class="services_modal-service">
                                         <i class="uil uil-check-circle services_modal-icon"></i>
-                                        <p>I Create ux element interactions.</p>
+                                        <p i18n="services__modal-service3">I Create ux element interactions.</p>
                                     </li>
                                     <li class="services_modal-service">
                                         <i class="uil uil-check-circle services_modal-icon"></i>
-                                        <p>I position your company brand.</p>
+                                        <p i18n="services__modal-service4">I position your company brand.</p>
                                     </li>
                                 </ul>
                             </div>
@@ -542,33 +553,33 @@
                     <div class="services_content">
                         <div>
                             <i class="uil uil-arrow services_icon"></i>
-                            <h3 class="services_title">Frontend <br> Developer</h3>
+                            <h3 class="services_title" i18n="services2__title">Frontend <br> Developer</h3>
                         </div>
                         <span class="button button--flex button--small button--link services_button">
-                            View More
+                            <span i18n="services1__button">View More</span>
                             <i class="uil uil-arrow-right button_icon"></i>
                         </span>
                         <div class="services_modal">
                             <div class="services_modal-content">
-                                <h4 class="services_modai-title">Frontend <br> Developer</h4>
+                                <h4 class="services_modai-title" i18n="services2__title">Frontend <br> Developer</h4>
                                 <i class="uil uil-times services_modal-close"></i>
     
                                 <ul class="services_modal-services grid">
                                     <li class="services_modal-service">
                                         <i class="uil uil-check-circle services_modal-icon"></i>
-                                        <p>I develop the user interface.</p>
+                                        <p i18n="services__modal-service1">Develop the user interface.</p>
                                     </li>
                                     <li class="services_modal-service">
                                         <i class="uil uil-check-circle services_modal-icon"></i>
-                                        <p>Web page development.</p>
+                                        <p i18n="services__modal-service2">Web page development.</p>
                                     </li>
                                     <li class="services_modal-service">
                                         <i class="uil uil-check-circle services_modal-icon"></i>
-                                        <p>I Create ux element interactions.</p>
+                                        <p i18n="services__modal-service3">Create ux element interactions.</p>
                                     </li>
                                     <li class="services_modal-service">
                                         <i class="uil uil-check-circle services_modal-icon"></i>
-                                        <p>I position your company brand.</p>
+                                        <p i18n="services__modal-service4">Position your company brand.</p>
                                     </li>
                                 </ul>
                             </div>
@@ -579,33 +590,33 @@
                     <div class="services_content">
                         <div>
                             <i class="uil uil-pen services_icon"></i>
-                            <h3 class="services_title">Branding <br> Designer</h3>
+                            <h3 class="services_title" i18n="services3__title">Branding <br> Designer</h3>
                         </div>
                         <span class="button button--flex button--small button--link services_button">
-                            View More
+                            <span i18n="services1__button">View More</span>
                             <i class="uil uil-arrow-right button_icon"></i>
                         </span>
                         <div class="services_modal">
                             <div class="services_modal-content">
-                                <h4 class="services_modal-title">Branding <br> Designer</h4>
+                                <h4 class="services_modal-title" i18n="services3__title">Branding <br> Designer</h4>
                                 <i class="uil uil-times services_modal-close"></i>
     
                                 <ul class="services_modal-services grid">
                                     <li class="services_modal-service">
                                         <i class="uil uil-check-circle services_modal-icon"></i>
-                                        <p>I develop the user interface.</p>
+                                        <p i18n="services__modal-service1">I develop the user interface.</p>
                                     </li>
                                     <li class="services_modal-service">
                                         <i class="uil uil-check-circle services_modal-icon"></i>
-                                        <p>Web page development.</p>
+                                        <p i18n="services__modal-service2">Web page development.</p>
                                     </li>
                                     <li class="services_modal-service">
                                         <i class="uil uil-check-circle services_modal-icon"></i>
-                                        <p>I Create ux element interactions.</p>
+                                        <p i18n="services__modal-service3">I Create ux element interactions.</p>
                                     </li>
                                     <li class="services_modal-service">
                                         <i class="uil uil-check-circle services_modal-icon"></i>
-                                        <p>I position your company brand.</p>
+                                        <p i18n="services__modal-service4">I position your company brand.</p>
                                     </li>
                                 </ul>
                             </div>
@@ -616,9 +627,9 @@
 
             <!--==================== PORTFOLIO ====================-->
             <section class="portfolio section" id="portfolio">
-                <h2 class="section_title">Portfolio</h2>
+                <h2 class="section_title" i18n="portfolio__title">Portfolio</h2>
                 
-                <span class="section_subtitle">Most recent</span>
+                <span class="section_subtitle" i18n="portfolio__subtitle">Most recent works</span>
 
                 <div class="portfolio_container container swiper-container">
                     <div class="swiper-wrapper">
@@ -627,8 +638,8 @@
                             <img src="assets/img/portfolio1.jpg" alt="" class="portfolio_img">
 
                             <div class="portfolio_data">
-                                <h3 class="portfolio_title">Modern Website</h3>
-                                <p class="portfolio_description">Website adaptable to all devices,
+                                <h3 class="portfolio_title" i18n="portfolio1__title">Modern Website</h3>
+                                <p class="portfolio_description" i18n="portfolio1__description">Website adaptable to all devices,
                                     with ui components and animated interactions.</p>
                                 <a href="#" class="button button--flex button--small portfolio_button">
                                     Demo
@@ -642,8 +653,8 @@
                             <img src="assets/img/portfolio2.jpg" alt="" class="portfolio_img">
 
                             <div class="portfolio_data">
-                                <h3 class="portfolio_title">Brand Design</h3>
-                                <p class="portfolio_description">Website adaptable to all devices,
+                                <h3 class="portfolio_title" i18n="portfolio2__title">Brand Design</h3>
+                                <p class="portfolio_description" i18n="portfolio1__description">Website adaptable to all devices,
                                     with ui components and animated interactions.</p>
                                 <a href="#" class="button button--flex button--small portfolio_button">
                                     Demo
@@ -657,8 +668,8 @@
                             <img src="assets/img/portfolio3.jpg" alt="" class="portfolio_img">
 
                             <div class="portfolio_data">
-                                <h3 class="portfolio_title">Online Store</h3>
-                                <p class="portfolio_description">Website adaptable to all devices,
+                                <h3 class="portfolio_title" i18n="portfolio3__title">Online Store</h3>
+                                <p class="portfolio_description" i18n="portfolio1__description">Website adaptable to all devices,
                                     with ui components and animated interactions.</p>
                                 <a href="#" class="button button--flex button--small portfolio_button">
                                     Demo
@@ -686,10 +697,10 @@
                 <div class="project_bg">
                     <div class="project_container container grid">
                         <div class="project_data">
-                            <h2 class="project_title">You have a new project</h2>
-                            <p class="project_description">Contact me now and get a 30% discount on your new project.</p>
+                            <h2 class="project_title" i18n="project__title">You have a new project</h2>
+                            <p class="project_description" i18n="project__description">Contact me now and get a 30% discount on your new project.</p>
                             <a href="#contact" class="button button--flex button--white">
-                                Contact Me
+                                <span i18n="project__contact">Contact Me</span>
                                 <i class="uil uil-message project_icon button_icon"></i>
                             </a>
                         </div>
@@ -701,8 +712,8 @@
 
             <!--==================== TESTIMONIAL ====================-->
             <section class="testimonial section">
-                <h2 class="section_title">Testimonial</h2>
-                <span class="section_subtitle">My clicent saying</span>
+                <h2 class="section_title" i18n="section__title">Testimonial</h2>
+                <span class="section_subtitle" i18n="section__subtitle">My client saying</span>
 
                 <div class="testimonial_container container swiper-container">
                     <div class="swiper-wrapper">
@@ -714,7 +725,7 @@
     
                                     <div>
                                         <h3 class="testimonial_name">Sara Smith</h3>
-                                        <span class="testimonial_client">Client</span>
+                                        <span class="testimonial_client" i18n="testimonial__client">Client</span>
                                     </div>
                                 </div>
     
@@ -727,7 +738,7 @@
                                 </div>
                             </div>
     
-                            <p class="testimonial_description">I get a good impression,I carry out my project 
+                            <p class="testimonial_description" i18n="testimonial__description">I get a good impression,I carry out my project 
                                 with all the possible quality and attention and support 24 hours a day.</p>
                         </div>
     
@@ -739,7 +750,7 @@
     
                                     <div>
                                         <h3 class="testimonial_name">Matt Robinson</h3>
-                                        <span class="testimonial_client">Client</span>
+                                        <span class="testimonial_client" i18n="testimonial__client">Client</span>
                                     </div>
                                 </div>
                                 <div>
@@ -751,7 +762,7 @@
                                 </div>
                             </div>
     
-                            <p class="testimonial_description">I get a good impression,I carry out my project 
+                            <p class="testimonial_description" i18n="testimonial__description">I get a good impression,I carry out my project 
                                 with all the possible quality and attention and support 24 hours a day.</p>
                         </div>
     
@@ -763,7 +774,7 @@
     
                                     <div>
                                         <h3 class="testimonial_name">Raul Harris</h3>
-                                        <span class="testimonial_client">Client</span>
+                                        <span class="testimonial_client" i18n="testimonial__client">Client</span>
                                     </div>
                                 </div>
                                 <div>
@@ -775,7 +786,7 @@
                                 </div>
                             </div>
     
-                            <p class="testimonial_description">I get a good impression,I carry out my project 
+                            <p class="testimonial_description" i18n="testimonial__description">I get a good impression,I carry out my project 
                                 with all the possible quality and attention and support 24 hours a day.</p>
                         </div>
                     </div>
@@ -787,8 +798,8 @@
 
             <!--==================== CONTACT ME ====================-->
             <section class="contact section" id="contact">
-                <h2 class="section_title ">Contact Me</h2>
-                <span class="section_subtitle">Get in touch</span>
+                <h2 class="section_title" i18n="contact__title">Contact Me</h2>
+                <span class="section_subtitle" i18n="contact__subtitle">Get in touch</span>
 
                 <div class="contact_container container grid">
                     <div>
@@ -796,7 +807,7 @@
                             <i class="uil uil-phone contact_icon"></i>
 
                             <div>
-                                <h3 class="contact_title">Call me</h3>
+                                <h3 class="contact_title" i18n="tel">Call me</h3>
                                 <span class="contact_subtitle">999-777-666</span>
                             </div>
                         </div>
@@ -804,7 +815,7 @@
                         <div class="contact_information">
                             <i class="uil uil-envelope contact_icon"></i>                       
                             <div>
-                                <h3 class="contact_title">Email</h3>
+                                <h3 class="contact_title" i18n="email">Email</h3>
                                 <span class="contact_subtitle">g888777@gmail.com</span>
                             </div>
                         </div>
@@ -812,7 +823,7 @@
                         <div class="contact_information">
                             <i class="uil uil-map-marker contact_icon"></i>
                             <div>
-                                <h3 class="contact_title">Location</h3>
+                                <h3 class="contact_title" i18n="location">Location</h3>
                                 <span class="contact_subtitle">Guangzhou - Tianhe Tangxia # 7</span>
                             </div>
                         </div>
@@ -821,27 +832,27 @@
                     <form action="" class="contact_form grid">
                         <div class="contact_inputs grid">
                             <div class="contact_content">
-                                <label for="" class="contact_label">Name:</label>
+                                <label for="" class="contact_label" i18n="contact__label1">Name:</label>
                                 <input type="text" class="contact_input">
                             </div>
 
                             <div class="contact_content">
-                                <label for="" class="contact_label">Email:</label>
+                                <label for="" class="contact_label" i18n="contact__label2">Email:</label>
                                 <input type="email" class="contact_input">
                             </div>
                         </div>
                         <div class="contact_content">
-                            <label for="" class="contact_label">Project:</label>
+                            <label for="" class="contact_label" i18n="contact__label3">Project:</label>
                             <input type="text" class="contact_input">
                         </div>
                         <div class="contact_content">
-                            <label for="" class="contact_label">Message:</label>
+                            <label for="" class="contact_label" i18n="contact__label4">Message:</label>
                             <textarea name="" id="" cols="0" rows="6" class="contact_input"></textarea>
                         </div>
 
                         <div>
                             <a href="#" class="button button--flex">
-                                Send Message
+                                <span i18n="contact__button">Send Message</span>
                                 <i class="uil uil-message button_icon"></i>
                             </a>
                         </div>
@@ -850,24 +861,24 @@
             </section>
         </main>
 
-        <!--==================== FOOTER ====================-->
+        <!--==================== 页脚 ====================-->
         <footer class="footer">
         <div class="footer_bg">
             <div class="footer_container container grid">
                 <div>
                     <h1 class="footer_title">Xiayuzz</h1>
-                    <span class="footer_subtitle">Anime editor</span>
+                    <span class="footer_subtitle" i18n="home__subtitle">Frontend developer</span>
                 </div>
 
                 <ul class="footer_links">
                     <li>
-                        <a href="#services" class="footer_link">Services</a>
+                        <a href="#services" class="footer_link" i18n="services__title">Services</a>
                     </li>
                     <li>
-                        <a href="#portfolio" class="footer_link">Portfolio</a>
+                        <a href="#portfolio" class="footer_link" i18n="portfolio__title">Portfolio</a>
                     </li>
                     <li>
-                        <a href="#contact" class="footer_link">Contactme</a>
+                        <a href="#contact" class="footer_link" i18n="contact__title">Contactme</a>
                     </li>
                 </ul>
 
@@ -880,7 +891,7 @@
                         <i class="iconfont icon-tiktok"></i>
                     </a>
 
-                    <a href="https://www.gitee.com/" target="_blank" class="footer_social">
+                    <a href="https://www.github.com/" target="_blank" class="footer_social">
                         <i class="iconfont icon-gitee"></i>
                     </a>
                 </div>
@@ -894,11 +905,18 @@
         <a href="#" class="scrollup" id="scroll-up">
             <i class="uil uil-arrow-up scrollup_icon"></i>
         </a>
+        <!-- jquery -->
+        <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="assets/js/jquery.i18n.min.js"></script>
 
         <!--==================== SWIPER JS ====================-->
         <script src="assets/js/swiper-bundle.min.js"></script>
 
         <!--==================== MAIN JS ====================-->
         <script src="assets/js/main.js"></script>
+        <!-- translate JS -->
+        <script src="assets/js/cn-en-translate.js"></script>
+        
+        
     </body>
 </html>
